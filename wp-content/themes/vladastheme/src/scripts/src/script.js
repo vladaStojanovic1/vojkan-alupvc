@@ -151,7 +151,6 @@
         // });
 
         $(window).on('scroll', function() {
-            console.log('Scroll event triggered'); // Provera da li se događaj pokreće
             $('body').removeClass('-mobile');
         });
 
@@ -314,7 +313,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 "+=0.5" // Pauza nakon podnaslova
             );
     }
-
 
 
     // Header animacija
