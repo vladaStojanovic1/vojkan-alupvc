@@ -1,0 +1,40 @@
+.m-why {
+  margin-bottom: 60px;
+
+  @include media-up(l) {
+    margin-bottom: 100px;
+  }
+
+  &__left {
+    margin-bottom: 30px;
+
+    h2 span {
+      color: $primary;
+      font-weight: 900;
+    }
+
+    p span {
+      color: $primary;
+      font-weight: 700;
+    }
+  }
+
+  &__box {
+    margin-bottom: 30px;
+
+    &--content {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      height: 100%;
+
+      svg {
+        margin-right: 10px;
+        min-width: 70px;
+        width: 70px;
+        height: 70px;
+        fill: $primary;
+      }
+    }
+  }
+}
+

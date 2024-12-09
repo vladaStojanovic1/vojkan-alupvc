@@ -1,0 +1,30 @@
+.a-arrow {
+  &.-up {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-135deg);
+    transition: all ease .2s;
+    margin-left: 5px;
+
+    @include media-down(l) {
+      border-color: $white;
+    }
+  }
+
+  &.-down {
+    transform: rotate(45deg);
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transition: all ease .2s;
+    margin-left: 5px;
+    margin-bottom: 3px;
+
+    @include media-down(l) {
+      border-color: $white;
+    }
+  }
+}

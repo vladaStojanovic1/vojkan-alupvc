@@ -1,0 +1,16 @@
+.a-text {
+  &.-small {
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: $gray-6;
+  }
+
+  &.-title {
+    //text-transform: uppercase;
+    font-size: 22px;
+    transition: all ease-in-out .2s;
+  }
+}

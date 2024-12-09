@@ -1,0 +1,15 @@
+.m-reasons {
+  margin-top: 80px;
+
+  @include media-up(l) {
+    margin-top: 70px;
+  }
+
+  strong {
+    color: $primary;
+  }
+
+  .text-center {
+    padding: 70px 0;
+  }
+}

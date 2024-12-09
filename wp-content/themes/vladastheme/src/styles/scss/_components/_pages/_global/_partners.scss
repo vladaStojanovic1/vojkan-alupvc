@@ -1,0 +1,30 @@
+.m-partners {
+  margin-bottom: 100px;
+
+  &.-contact {
+    margin-top: 20px;
+
+    @include media-up(l) {
+      margin-top: 100px;
+    }
+  }
+
+  &__logo {
+    text-align: center;
+
+    img {
+      width: 170px;
+      max-width: 170px;
+
+      @include media-up(s) {
+        width: 200px;
+        max-width: 200px;
+      }
+    }
+  }
+
+  ._wrapper, .swiper-container {
+    overflow-x: hidden;
+  }
+
+}

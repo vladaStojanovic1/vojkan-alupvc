@@ -1,0 +1,19 @@
+.m-info {
+
+  &__address {
+    flex-direction: column;
+
+    @include media-up(s) {
+      flex-direction: row;
+
+      div {
+        margin-right: 20px;
+      }
+    }
+
+    svg {
+      width: 20px;
+      height: 25px;
+    }
+  }
+}

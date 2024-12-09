@@ -1,0 +1,12 @@
+.m-textTitle {
+  padding: 80px 0 50px;
+
+  @include media-up(l) {
+    padding: 80px 0 70px;
+  }
+
+
+  strong {
+    color: $primary;
+  }
+}

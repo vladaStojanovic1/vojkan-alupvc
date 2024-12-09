@@ -1,0 +1,14 @@
+.m-info {
+  background-color: $primary;
+  padding: 5px 0;
+  position: relative;
+  z-index: 12;
+
+  svg {
+    margin-right: 5px;
+  }
+
+  p, a {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,46 @@
+.a-input {
+  &.-primary, textarea {
+    background-color: transparent;
+    padding: 10px;
+    outline: none;
+    line-height: 1;
+    width: 100%;
+    border: 1px solid $gray-5;
+    margin-bottom: 20px;
+    transition: all ease .2s;
+    border-radius: 8px;
+
+    &::placeholder {
+      color: $gray-6;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    &:focus {
+      letter-spacing: .5px;
+    }
+
+
+    & + .wpcf7-not-valid-tip {
+      position: absolute;
+      font-size: 12px;
+      top: 30px;
+    }
+
+    &.wpcf7-not-valid {
+      border-color: $primary;
+
+      &::placeholder {
+        color: $primary;
+      }
+    }
+  }
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 60px #dff0d8 inset!important;
+}

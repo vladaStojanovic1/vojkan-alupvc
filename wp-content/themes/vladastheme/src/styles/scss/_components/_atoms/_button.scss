@@ -1,0 +1,91 @@
+.a-button {
+  &.-primary {
+    padding: 15px 50px 15px 20px;
+    color: $white;
+    display: inline-block;
+    background: $primary;
+    font-weight: 700;
+    position: relative;
+    border-radius: 1px 20px 1px 20px;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    border: 2px solid $primary;
+    line-height: 1;
+    cursor: pointer;
+
+    &::after {
+      content: '';
+      background-color: $white;
+      width: 100%;
+      height: 0;
+      transition: all ease .2s;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      border-radius: 0 20px 0 20px;
+      z-index: -1;
+    }
+
+    svg {
+      width: 20px;
+      transform: translateY(-50%);
+      transition: all .2s ease-out;
+      position: absolute;
+      top: 50%;
+      margin-left: 10px;
+    }
+
+    &:hover {
+      color: $primary;
+
+      &::after {
+        height: 100%;
+      }
+
+      svg {
+        width: 30px;
+        fill: $primary;
+
+        line, polyline {
+          stroke: $primary;
+        }
+      }
+    }
+  }
+
+  &.-secondary {
+    background-color: transparent;
+    border: 2px solid $white;
+    padding: 10px 30px;
+    font-weight: 700;
+    line-height: 1;
+    display: inline-block;
+    //border-radius: 0 20px 0 20px;
+    border-radius: 8px;
+    transition: all ease .2s;
+
+    &:hover {
+      background-color: $white;
+      color: $primary;
+    }
+  }
+
+  &.-arrowDown {
+    &:hover {
+      color: $primary;
+
+      svg {
+        fill: $primary;
+        top: 55%;
+        width: 20px;
+        transform: translateY(-50%) scale(1.4);
+
+        line, polyline {
+          stroke: $primary;
+        }
+      }
+    }
+  }
+}
+
+
