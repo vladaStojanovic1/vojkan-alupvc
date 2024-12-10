@@ -4,11 +4,51 @@
   position: relative;
   z-index: 12;
 
-  svg {
-    margin-right: 5px;
+  &__address {
+    //flex-direction: column;
+
+    @include media-up(s) {
+      //flex-direction: row;
+
+      div {
+        margin-right: 20px;
+      }
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+    }
+
+    &--tel {
+      svg {
+        margin-right: 5px;
+      }
+    }
+
+    &--item {
+      //margin-bottom: 5px;
+      //
+      //@include media-up(s) {
+      //  margin-bottom: 0;
+      //}
+
+     @include media-down(s) {
+       &:first-of-type {
+         margin-right: 15px;
+       }
+     }
+
+
+    }
   }
 
   p, a {
-    font-size: 14px;
+    font-size: 11px;
+
+    @include media-up(s) {
+      font-size: 14px;
+    }
   }
 }

@@ -1,4 +1,4 @@
-<div class="m-project _m6 _l3 project mb-30">
+<div class="m-project _m6 _l4 _xl3 project mb-30">
     <div class="m-project__content">
         <?php if (has_post_thumbnail()) : ?>
             <?php
@@ -28,6 +28,7 @@
                             echo $content_for_caption;
                         }
                         ?>
+                        <p class="see-more">Klikni za vise...</p>
                     </div>
                 </a>
             </div>

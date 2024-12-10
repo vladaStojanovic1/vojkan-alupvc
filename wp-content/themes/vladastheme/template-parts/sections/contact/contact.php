@@ -69,7 +69,6 @@ $phoneIcon = get_template_directory() . '/src/images/phone.svg';
 
             <div class="_l6">
                 <div class="m-contactPage__mapDiv">
-
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2910.3077450249334!2d22.588974477019978!3d43.161063971129764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47553da1de4a2f45%3A0x68359c15260383b9!2sALU%20PVC%20stolarija%20%22Vojkan%22!5e0!3m2!1ssr!2srs!4v1733759532579!5m2!1ssr!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <div id="spinner" class="d-flex justify-center">
                         <span class="loader"></span>
@@ -92,6 +91,4 @@ $phoneIcon = get_template_directory() . '/src/images/phone.svg';
             };
         });
     });
-
-
 </script>
