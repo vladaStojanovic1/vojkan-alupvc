@@ -16,9 +16,14 @@
     }
 
     svg {
-      width: 20px;
-      height: 20px;
+      width: 17px;
+      height: 17px;
       margin-right: 5px;
+
+      @include media-up(s) {
+        width: 20px;
+        height: 20px;
+      }
     }
 
     &--tel {
@@ -45,7 +50,7 @@
   }
 
   p, a {
-    font-size: 11px;
+    font-size: 10px;
 
     @include media-up(s) {
       font-size: 14px;

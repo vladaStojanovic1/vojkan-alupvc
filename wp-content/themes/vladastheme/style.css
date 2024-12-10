@@ -3616,16 +3616,20 @@ input:-webkit-autofill:active {
     .m-info__address div {
       margin-right: 20px; } }
   .m-info__address svg {
-    width: 20px;
-    height: 20px;
+    width: 17px;
+    height: 17px;
     margin-right: 5px; }
+    @media (min-width: 576px) {
+      .m-info__address svg {
+        width: 20px;
+        height: 20px; } }
   .m-info__address--tel svg {
     margin-right: 5px; }
   @media (max-width: 575.98px) {
     .m-info__address--item:first-of-type {
       margin-right: 15px; } }
   .m-info p, .m-info a {
-    font-size: 11px; }
+    font-size: 10px; }
     @media (min-width: 576px) {
       .m-info p, .m-info a {
         font-size: 14px; } }
