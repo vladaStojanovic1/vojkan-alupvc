@@ -5,11 +5,15 @@ $r_small_title = get_field('r_small_title');
 ?>
 <section class="m-reasons color-silver">
     <div class="_wrapper">
-        <div class="text-center">
-            <p class="a-text -small"><?php echo $r_small_title; ?></p>
-            <h2><?php echo $r_title; ?></h2>
-            <div class="line-h mb-30"></div>
-            <?php echo $r_text; ?>
-        </div>
+       <div class="_row justify-center">
+           <div class="_l9">
+               <div class="text-center">
+                   <p class="a-text -small"><?php echo $r_small_title; ?></p>
+                   <h2><?php echo $r_title; ?></h2>
+                   <div class="line-h mb-30"></div>
+                   <?php echo $r_text; ?>
+               </div>
+           </div>
+       </div>
     </div>
 </section>
