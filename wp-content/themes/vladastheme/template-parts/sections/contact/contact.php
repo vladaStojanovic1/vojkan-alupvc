@@ -60,7 +60,7 @@ $phoneIcon = get_template_directory() . '/src/images/phone.svg';
         <div class="_row justify-center">
             <div class="_l6">
                 <div class="m-contactPage__mapDiv">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2920.205703502002!2d22.094100777012056!3d42.95286937114393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47557b2707401631%3A0xaab41c7ca4ac8f3!2sVojkan!5e0!3m2!1ssr!2srs!4v1732815041488!5m2!1ssr!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe title="Lokacija Vlasotince, Orašje bb - Vojkan ALU & PVC Stolarija" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2920.205703502002!2d22.094100777012056!3d42.95286937114393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47557b2707401631%3A0xaab41c7ca4ac8f3!2sVojkan!5e0!3m2!1ssr!2srs!4v1732815041488!5m2!1ssr!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <div id="spinner" class="d-flex justify-center">
                             <span class="loader"></span>
                         </div>
@@ -69,7 +69,7 @@ $phoneIcon = get_template_directory() . '/src/images/phone.svg';
 
             <div class="_l6">
                 <div class="m-contactPage__mapDiv">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2910.3077450249334!2d22.588974477019978!3d43.161063971129764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47553da1de4a2f45%3A0x68359c15260383b9!2sALU%20PVC%20stolarija%20%22Vojkan%22!5e0!3m2!1ssr!2srs!4v1733759532579!5m2!1ssr!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe title="Lokacija Pirot, Trg republike 118 - Vojkan ALU & PVC Stolarija" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2910.3077450249334!2d22.588974477019978!3d43.161063971129764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47553da1de4a2f45%3A0x68359c15260383b9!2sALU%20PVC%20stolarija%20%22Vojkan%22!5e0!3m2!1ssr!2srs!4v1733759532579!5m2!1ssr!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <div id="spinner" class="d-flex justify-center">
                         <span class="loader"></span>
                     </div>
