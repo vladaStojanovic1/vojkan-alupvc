@@ -341,11 +341,26 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Animacija Bounce
-    gsap.fromTo(
-        ".anim-fromTop",
-        { opacity: 0, y: -100 }, // Početne vrednosti
-        { opacity: 1, y: 0, duration: 1, delay: 0.7, ease: "bounce.out" }
-    );
+    if (document.querySelector(".anim-fromTop")) {
+        gsap.fromTo(
+            ".anim-fromTop",
+            { opacity: 0, y: -100 },
+            { opacity: 1, y: 0, duration: 1, delay: 0.7, ease: "bounce.out" }
+        );
+    }
+
+
+    // Google Maps
+    let iframes = document.querySelectorAll('iframe');
+    let spinners = document.querySelectorAll('#spinner');
+
+    iframes.forEach((iframe, index) => {
+        iframe.onload = function() {
+            if (spinners[index]) {
+                spinners[index].style.display = 'none';
+            }
+        };
+    });
 
 });
 

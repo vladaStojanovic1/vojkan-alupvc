@@ -78,17 +78,3 @@ $phoneIcon = get_template_directory() . '/src/images/phone.svg';
         </div>
     </div>
 </section>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        let iframes = document.querySelectorAll('iframe');
-        let spinners = document.querySelectorAll('#spinner');
-
-        iframes.forEach((iframe, index) => {
-            iframe.onload = function() {
-                if (spinners[index]) {
-                    spinners[index].style.display = 'none';
-                }
-            };
-        });
-    });
-</script>

@@ -29,7 +29,7 @@ $p_title = get_field('p_title');
                             <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>" alt="<?php the_title(); ?>">
                         </div>
                         <h4 class="mt-20 mb-10 a-text -title"><?php echo get_the_title(); ?></h4>
-                        <p class="color-gray fs-14"><?php echo get_excerpt_words ($tcontent, 10) ?></p>
+                        <p class="color-gray fs-14"><?php echo get_excerpt_words ($tcontent, 20) ?></p>
                     </a>
                 </div>
                 <?php endwhile; ?>
