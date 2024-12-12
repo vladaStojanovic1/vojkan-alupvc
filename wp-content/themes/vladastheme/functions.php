@@ -170,4 +170,5 @@ add_theme_support( 'title-tag' );
 
 
 add_theme_support('post-thumbnails');
-add_image_size('custom-size', 800, 600, true); // Širina 800px, visina 600px, 'true' za obrezivanje.
+add_image_size('custom-size', 800, 600, true);
+

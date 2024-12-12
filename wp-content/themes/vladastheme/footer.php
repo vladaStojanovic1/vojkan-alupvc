@@ -8,7 +8,7 @@
                     <a href="/">
                         <img
                             src="<?php echo get_template_directory_uri() . '/src/images/logo-white.png' ?>"
-                            alt="PVC Vojkan Vlasotince"
+                            alt="Vojkan ALU & PVC - vrhunska PVC i ALU stolarija, posetite nas u Vlasotincu i Pirotu."
                             class="m-footer__logo mb-30"
                         >
                     </a>

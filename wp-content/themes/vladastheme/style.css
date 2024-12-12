@@ -3601,6 +3601,9 @@ html.with-fancybox body.hide-scrollbar {
     .a-input.-primary.wpcf7-not-valid::placeholder, .a-input textarea.wpcf7-not-valid::placeholder {
       color: #393185; }
 
+.a-input.wpcf7-textarea {
+  margin-bottom: 0 !important; }
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -3824,6 +3827,8 @@ input:-webkit-autofill:active {
     @media (min-width: 768px) {
       .m-contact__form {
         margin-top: 0; } }
+    .m-contact__form form {
+      position: relative; }
   .m-contact__icon {
     margin-right: 20px; }
     .m-contact__icon svg {
@@ -3846,7 +3851,7 @@ input:-webkit-autofill:active {
     border: 2px solid #393185;
     line-height: 1;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 35px;
     -webkit-transition: all ease .2s;
     transition: all ease .2s; }
     .m-contact .wpcf7-submit:hover {
@@ -3855,11 +3860,14 @@ input:-webkit-autofill:active {
   .m-contact .wpcf7-response-output {
     border: 0 !important;
     position: absolute;
-    bottom: 75px;
+    bottom: 60px;
     font-size: 14px;
     left: 0;
     margin: 0 !important;
-    color: #393185; }
+    padding: 0 !important;
+    color: #393185;
+    line-height: 1.1;
+    min-height: 30px; }
   .m-contact br {
     display: none; }
 

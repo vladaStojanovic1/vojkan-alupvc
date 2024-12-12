@@ -362,6 +362,19 @@ document.addEventListener("DOMContentLoaded", function () {
         };
     });
 
+
+    // Premestanje CF7 poruka
+    const forms = document.querySelectorAll('.wpcf7-form');
+    forms.forEach((form) => {
+        const responseOutput = form.querySelector('.wpcf7-response-output');
+        const submitButton = form.querySelector('.wpcf7-submit');
+
+        if (responseOutput && submitButton) {
+            // Premesti .wpcf7-response-output iznad dugmeta za slanje
+            submitButton.parentNode.insertBefore(responseOutput, submitButton);
+        }
+    });
+
 });
 
 

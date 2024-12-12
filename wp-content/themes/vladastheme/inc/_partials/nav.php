@@ -11,7 +11,7 @@ $site_logo = get_field('site_logo', 'option');
                         src="<?php echo $site_logo['url']; ?>"
                         srcset="<?php echo wp_get_attachment_image_srcset($site_logo['id']); ?>"
                         sizes="(max-width: 768px) 100vw, 300px"
-                        alt="PVC Vojkan Vlasotince"
+                        alt="Vojkan ALU & PVC - vrhunska PVC i ALU stolarija, posetite nas u Vlasotincu i Pirotu."
                     >
                 </a>
             </div>
