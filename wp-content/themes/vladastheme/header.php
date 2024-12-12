@@ -10,14 +10,26 @@ global $globalSite;
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Dobrodošli na našu stranicu. Pružamo kvalitetne PVC i ALU stolarije za vaš dom ili poslovni prostor. Kontaktirajte nas već danas!">
 
     <?php
     if (is_single() || is_page()) {
-        $excerpt = strip_tags(get_the_excerpt());
-        echo '<meta name="description" content="' . esc_attr($excerpt) . '">';
+        $yoast_meta_desc = get_post_meta(get_the_ID(), '_yoast_wpseo_metadesc', true);
+        if (!empty($yoast_meta_desc)) {
+            echo '<meta name="description" content="' . esc_attr($yoast_meta_desc) . '">';
+        } else {
+            $excerpt = strip_tags(get_the_excerpt());
+            echo '<meta name="description" content="' . esc_attr($excerpt) . '">';
+        }
+    } else {
+        if (function_exists('wpseo_get_value')) {
+            $meta_description = wpseo_get_value('metadesc');
+            if (!empty($meta_description)) {
+                echo '<meta name="description" content="' . esc_attr($meta_description) . '">';
+            }
+        }
     }
     ?>
+
     <?php wp_head(); ?>
 
     <link rel="profile" href="http://gmpg.org/xfn/11">
