@@ -3857,9 +3857,10 @@ input:-webkit-autofill:active {
     margin-top: 35px;
     -webkit-transition: all ease .2s;
     transition: all ease .2s; }
-    .m-contact .wpcf7-submit:hover {
-      background-color: #fff;
-      color: #393185; }
+    @media (min-width: 992px) {
+      .m-contact .wpcf7-submit:hover {
+        background-color: #fff;
+        color: #393185; } }
   .m-contact .wpcf7-response-output {
     border: 0 !important;
     position: absolute;
