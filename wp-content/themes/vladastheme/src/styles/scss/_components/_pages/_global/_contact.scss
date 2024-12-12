@@ -10,6 +10,11 @@
 
     form {
       position: relative;
+
+      &.submitting .wpcf7-submit{
+        color: $primary;
+        pointer-events: none;
+      }
     }
   }
 
@@ -60,6 +65,21 @@
     color: $primary;
     line-height: 1.1;
     min-height: 30px;
+  }
+
+  .wpcf7-spinner {
+    z-index: 11;
+    position: absolute;
+    left: 31px;
+    bottom: 13px;
+    background-color: $white;
+    opacity: 1;
+
+    &::before {
+      content: '';
+      background-color: $primary;
+    }
+
   }
 
   br {

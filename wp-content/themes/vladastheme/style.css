@@ -3829,6 +3829,9 @@ input:-webkit-autofill:active {
         margin-top: 0; } }
     .m-contact__form form {
       position: relative; }
+      .m-contact__form form.submitting .wpcf7-submit {
+        color: #393185;
+        pointer-events: none; }
   .m-contact__icon {
     margin-right: 20px; }
     .m-contact__icon svg {
@@ -3868,6 +3871,16 @@ input:-webkit-autofill:active {
     color: #393185;
     line-height: 1.1;
     min-height: 30px; }
+  .m-contact .wpcf7-spinner {
+    z-index: 11;
+    position: absolute;
+    left: 31px;
+    bottom: 13px;
+    background-color: #fff;
+    opacity: 1; }
+    .m-contact .wpcf7-spinner::before {
+      content: '';
+      background-color: #393185; }
   .m-contact br {
     display: none; }
 
