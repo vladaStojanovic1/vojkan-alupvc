@@ -6,6 +6,7 @@
             "key": "field_67407b7d3f11c",
             "label": "R Title",
             "name": "r_title",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -25,6 +26,7 @@
             "key": "field_6742053e99354",
             "label": "R Small Title",
             "name": "r_small_title",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -44,6 +46,7 @@
             "key": "field_67407b853f11d",
             "label": "R Text",
             "name": "r_text",
+            "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -67,6 +70,13 @@
                 "operator": "==",
                 "value": "template-parts\/template-home.php"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-parts\/template-404.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -78,5 +88,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1732379976
+    "modified": 1734124541
 }

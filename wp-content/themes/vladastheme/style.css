@@ -3819,6 +3819,16 @@ input:-webkit-autofill:active {
     color: #393185; }
   .m-reasons .text-center {
     padding: 70px 0; }
+  .m-reasons__homeLink {
+    text-decoration: underline; }
+    .m-reasons__homeLink a {
+      color: #393185;
+      font-size: 20px; }
+    .m-reasons__homeLink svg {
+      width: 20px;
+      margin-left: 10px; }
+      .m-reasons__homeLink svg line, .m-reasons__homeLink svg polyline {
+        stroke: #393185; }
 
 .m-contact {
   padding: 100px 0; }
