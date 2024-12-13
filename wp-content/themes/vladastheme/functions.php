@@ -172,3 +172,11 @@ add_theme_support( 'title-tag' );
 add_theme_support('post-thumbnails');
 add_image_size('custom-size', 800, 600, true);
 
+// Proizvodi = 404 stranica
+function redirect_to_404_if_product_page() {
+    if (is_page('proizvodi')) { // Proverava da li je stranica 'proizvodi'
+        wp_redirect(home_url('/404-page/')); // Preusmerava na tvoju custom 404 stranicu
+        exit();
+    }
+}
+add_action('template_redirect', 'redirect_to_404_if_product_page');
