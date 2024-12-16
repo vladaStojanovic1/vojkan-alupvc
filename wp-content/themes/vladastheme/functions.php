@@ -180,3 +180,4 @@ function redirect_to_404_if_product_page() {
     }
 }
 add_action('template_redirect', 'redirect_to_404_if_product_page');
+

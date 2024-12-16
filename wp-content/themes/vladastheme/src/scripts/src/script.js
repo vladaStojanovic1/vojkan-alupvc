@@ -293,7 +293,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 duration: 2.5,
                 ease: "none"
             })
-            // Elastična animacija za podnaslov
             .fromTo(
                 "#typing-subtext",
                 { opacity: 0, scale: 0.6 },
@@ -303,14 +302,14 @@ document.addEventListener("DOMContentLoaded", function () {
                     duration: 1,
                     ease: "power1.inOut"
                 },
-                "+=0.5" // Pauza nakon kucanja naslova
+                "+=0.5"
             )
             // Dugme fade-in
             .fromTo(
-                ".a-button",
+                ".opacityAnim",
                 { opacity: 0 },
                 { opacity: 1, duration: 1, ease: "power1.inOut" },
-                "+=0.5" // Pauza nakon podnaslova
+                "+=0.5"
             );
     }
 
