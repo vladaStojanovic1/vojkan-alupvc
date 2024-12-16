@@ -31,7 +31,7 @@ $w_box_4_icon = get_field( 'w_box_4_icon' );
                                 <?php echo $w_box_1_icon; ?>
                                 <h4><?php echo $w_box_1_title; ?></h4>
                             </div>
-                            <p class="mb-0 color-gray fw-300"><?php echo $w_box_1_text; ?></p>
+                            <p class="mb-0 color-gray"><?php echo $w_box_1_text; ?></p>
                         </div>
 
                     </div>
@@ -42,7 +42,7 @@ $w_box_4_icon = get_field( 'w_box_4_icon' );
                                <?php echo $w_box_2_icon; ?>
                                <h4><?php echo $w_box_2_title; ?></h4>
                            </div>
-                           <p class="mb-0 color-gray fw-300"><?php echo $w_box_2_text; ?></p>
+                           <p class="mb-0 color-gray"><?php echo $w_box_2_text; ?></p>
                        </div>
                     </div>
 
@@ -53,7 +53,7 @@ $w_box_4_icon = get_field( 'w_box_4_icon' );
                                 <?php echo $w_box_3_icon; ?>
                                 <h4><?php echo $w_box_3_title; ?></h4>
                             </div>
-                            <p class="mb-0 color-gray fw-300"><?php echo $w_box_3_text; ?>.</p>
+                            <p class="mb-0 color-gray"><?php echo $w_box_3_text; ?>.</p>
                         </div>
                     </div>
                     <div class="_m6 m-why__box">
@@ -62,7 +62,7 @@ $w_box_4_icon = get_field( 'w_box_4_icon' );
                                 <?php echo $w_box_4_icon; ?>
                                 <h4><?php echo $w_box_4_title; ?></h4>
                             </div>
-                            <p class="mb-0 color-gray fw-300"><?php echo $w_box_4_text; ?></p>
+                            <p class="mb-0 color-gray"><?php echo $w_box_4_text; ?></p>
                         </div>
                     </div>
                 </div>

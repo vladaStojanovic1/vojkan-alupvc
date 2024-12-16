@@ -40,15 +40,16 @@
       font-weight: 700;
       margin-bottom: 0;
 
+      @include media-down(l) {
+        max-width: 250px;
+      }
+
       span {
-        margin-left: 20px;
+        //margin-left: 20px;
         font-weight: 400;
         color: $secondary;
         font-size: 14px;
-
-        @include media-up(l) {
-          margin-left: auto;
-        }
+        margin-left: auto;
       }
     }
 

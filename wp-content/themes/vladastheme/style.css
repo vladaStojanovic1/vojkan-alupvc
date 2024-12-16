@@ -4208,6 +4208,9 @@ input:-webkit-autofill:active {
     height: 100vh;
     text-align: left;
     padding: 100px 0 0 40px; }
+    @media (min-width: 576px) and (max-width: 992px) and (orientation: landscape) {
+      .m-nav__links #menu-navigacija {
+        width: 40%; } }
     @media (min-width: 576px) {
       .m-nav__links #menu-navigacija {
         text-align: center; } }
@@ -4429,6 +4432,10 @@ input:-webkit-autofill:active {
   border-left: 3px solid #393185;
   padding: 100px 0 0 40px;
   height: 100vh; }
+  @media (min-width: 576px) and (max-width: 992px) and (orientation: landscape) {
+    .-mobile .m-nav__links #menu-navigacija {
+      overflow: auto;
+      width: 40%; } }
   @media (min-width: 576px) {
     .-mobile .m-nav__links #menu-navigacija {
       text-align: start;
@@ -4455,6 +4462,9 @@ input:-webkit-autofill:active {
     z-index: 0; }
   .m-header.-about {
     height: 50vh; }
+    @media (min-width: 576px) and (max-width: 992px) and (orientation: landscape) {
+      .m-header.-about {
+        height: 80vh; } }
     @media (min-width: 992px) {
       .m-header.-about {
         background-position: 0 -140px;
@@ -4472,6 +4482,9 @@ input:-webkit-autofill:active {
     margin-bottom: 190px;
     position: relative;
     text-align: end; }
+    @media (min-width: 576px) and (max-width: 992px) and (orientation: landscape) {
+      .m-header__content {
+        margin-bottom: 0; } }
     .-about .m-header__content {
       text-align: start;
       margin-bottom: 60px; }
@@ -4545,14 +4558,14 @@ input:-webkit-autofill:active {
     .m-footer__textItem p {
       font-weight: 700;
       margin-bottom: 0; }
+      @media (max-width: 991.98px) {
+        .m-footer__textItem p {
+          max-width: 250px; } }
       .m-footer__textItem p span {
-        margin-left: 20px;
         font-weight: 400;
         color: #ced4da;
-        font-size: 14px; }
-        @media (min-width: 992px) {
-          .m-footer__textItem p span {
-            margin-left: auto; } }
+        font-size: 14px;
+        margin-left: auto; }
     .m-footer__textItem a {
       display: block;
       color: #ced4da; }

@@ -27,7 +27,8 @@
             <div class="_l3 m-footer__textItem -work">
                 <h4 class="color-white">Kontakt informacije</h4>
                 <div class="line-h"></div>
-                <p class="d-flex align-center">Telefon:<span><a target="_blank" href="tel:+381600874137">060 087 4137</a></span></p>
+                <p class="d-flex align-center">Telefon:<span><a href="tel:+381600874137">060 087 4137</a></span></p>
+                <p class="d-flex align-center">Email:<span><a href="mailto:cabinac.vojkan@gmail.com">cabinac.vojkan@gmail.com</a></span></p>
                 <p class="d-flex align-center">Adresa 1:<span><a target="_blank" href="https://maps.app.goo.gl/pa2MX8vZ6jRN87dS8">Vlasotince, Orašje bb</a></span></p>
                 <p class="d-flex align-center">Adresa 2:<span><a target="_blank" href="https://maps.app.goo.gl/3Qt1izkPZo7Hixom7">Pirot, Trg republike 118</a></span></p>
 <!--                <a class="a-button -secondary mt-30" href="/contact">Kontakt</a>-->

@@ -1,5 +1,4 @@
 .m-header {
-  //background-position: center;
   background-size: cover;
   height: calc(100vh - 34px);
   position: relative;
@@ -16,8 +15,13 @@
     z-index: 0;
   }
 
+
   &.-about {
     height: 50vh;
+
+    @media (min-width: 576px) and (max-width: 992px) and (orientation: landscape) {
+      height: 80vh;
+    }
 
     @include media-up(l) {
       background-position: 0 -140px;
@@ -39,6 +43,10 @@
     margin-bottom: 190px;
     position: relative;
     text-align: end;
+
+    @media (min-width: 576px) and (max-width: 992px) and (orientation: landscape) {
+      margin-bottom: 0;
+    }
 
     .-about & {
       text-align: start;
