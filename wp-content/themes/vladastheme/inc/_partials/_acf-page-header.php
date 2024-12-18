@@ -79,10 +79,17 @@ function headerPage() {
                     <div class="m-header__content anim-fromTop">
                         <h1 class="m-header__content--title"><?php echo $header_title;?></h1>
                         <div class="line-h"></div>
-                        <div class="m-header__breadcrumb mt-20">
-                            <a href="/">Početna</a> <span>/</span>
-                            <a class="m-header__breadcrumb--current" href=""><?php echo $header_title; ?></a>
-                        </div>
+<!--                        <div class="m-header__breadcrumb mt-20">-->
+<!--                            <a href="/">Početna</a> <span>/</span>-->
+<!--                            <a class="m-header__breadcrumb--current" href="">--><?php //echo $header_title; ?><!--</a>-->
+<!--                        </div>-->
+
+
+                        <?php
+                        if (function_exists('yoast_breadcrumb')) {
+                            yoast_breadcrumb('<div class="m-header__breadcrumb mt-20">', '</div>');
+                        }
+                        ?>
                     </div>
                 </div>
             </div>
@@ -104,10 +111,18 @@ function headerPostPage() {
                     <div class="m-header__content anim-fromTop">
                         <h1 class="m-header__content--title"><?php echo the_title();?></h1>
                         <div class="line-h"></div>
-                        <div class="m-header__breadcrumb mt-20">
-                            <a href="/">Početna</a> <span>/</span>
-                            <a class="m-header__breadcrumb--current" href=""><?php the_title(); ?></a>
-                        </div>
+<!--                        <div class="m-header__breadcrumb mt-20">-->
+<!--                            <a href="/">Početna</a> <span>/</span>-->
+<!--                            <a class="m-header__breadcrumb--current" href="">--><?php //the_title(); ?><!--</a>-->
+<!--                        </div>-->
+
+                        <?php
+                        if (function_exists('yoast_breadcrumb')) {
+                            yoast_breadcrumb('<div class="m-header__breadcrumb mt-20">', '</div>');
+                        }
+                        ?>
+
+
                     </div>
                 </div>
             </div>
