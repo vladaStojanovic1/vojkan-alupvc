@@ -42,7 +42,6 @@ global $globalSite;
         <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri() . '/src/images/favicon/apple-touch-icon.png'; ?>" />
         <link rel="manifest" href="<?php echo get_template_directory_uri() . '/src/images/favicon/site.webmanifest'; ?>" />
     <?php endif; ?>
-    <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>

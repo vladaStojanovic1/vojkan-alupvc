@@ -183,17 +183,3 @@ add_action('template_redirect', function () {
 
 
 
-add_filter('wpseo_breadcrumb_output', function ($output) {
-    // Dodaj polje "item" za svaki breadcrumb
-    $output = preg_replace_callback(
-        '/"position":(\d+)/',
-        function ($matches) {
-            // Dodaj "item" sa odgovarajućim URL-om
-            $item_url = esc_url(get_permalink());
-            return '"item": "' . $item_url . '", "position":' . $matches[1];
-        },
-        $output
-    );
-    return $output;
-});
-
