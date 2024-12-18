@@ -26,7 +26,11 @@ $p_title = get_field('p_title');
                 <div class="_s6 _l3 m-products__item">
                     <a class="text-center" href="<?php echo get_permalink(); ?>">
                         <div class="m-products__item--imgDiv">
-                            <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>" alt="<?php the_title(); ?>">
+                            <?php
+                            $image_id = get_post_thumbnail_id(get_the_ID());
+                            $alt_text = get_post_meta($image_id, '_wp_attachment_image_alt', true);
+                            ?>
+                            <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>" alt="<?php echo esc_attr($alt_text); ?>">
                         </div>
                         <h4 class="mt-20 mb-10 a-text -title"><?php echo get_the_title(); ?></h4>
                         <p class="color-gray fs-14"><?php echo get_excerpt_words ($tcontent, 20) ?></p>
