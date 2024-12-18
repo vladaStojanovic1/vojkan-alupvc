@@ -15,6 +15,11 @@
     p strong {
       color: $primary;
     }
+
+    a {
+      color: $primary;
+      text-decoration: underline;
+    }
   }
 
   &__counter {
