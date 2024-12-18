@@ -16,10 +16,13 @@ $p_text = get_field('p_text');
                         <?php if( have_rows('partner_repeater') ): ?>
                             <?php while( have_rows('partner_repeater') ): the_row();
                                 $partner_logo = get_sub_field('partner_logo');
+                                $partner_link = get_sub_field('partner_link');
                                 ?>
                             <div class="swiper-slide">
                                 <div class="m-partners__logo">
-                                    <img src="<?php echo $partner_logo['url']; ?>" alt="<?php echo $partner_logo['alt']; ?>">
+                                    <a target="_blank" href="<?php echo $partner_link; ?>">
+                                        <img src="<?php echo $partner_logo['url']; ?>" alt="<?php echo $partner_logo['alt']; ?>">
+                                    </a>
                                 </div>
                             </div>
                             <?php endwhile; ?>

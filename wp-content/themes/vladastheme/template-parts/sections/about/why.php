@@ -70,3 +70,7 @@ $w_box_4_icon = get_field( 'w_box_4_icon' );
         </div>
     </div>
 </section>
+
+<p>
+    Prozori napravljeni od GEALAN profila nove generacije predstavljaju spoj moderne estetike i tehničke inovativnosti. Njihov pažljivo dizajniran sistem, osmišljen do najsitnijeg detalja, ne samo da zadovoljava sve tehničke standarde, već pruža i vrhunski nivo energetske efikasnosti i funkcionalnosti, doprinoseći udobnosti i dugotrajnosti Vašeg doma.
+</p>
