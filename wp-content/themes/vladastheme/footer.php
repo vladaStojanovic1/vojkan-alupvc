@@ -1,6 +1,12 @@
 <?php wp_footer();?>
 
 <footer class="m-footer">
+
+    <div class="m-footer__svg">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="#000"><path d="M0 0v36L250 4l750 96V0H0z"></path></svg>
+    </div>
+
+
     <div class="_wrapper">
         <div class="_row">
             <div class="_l3 m-footer__textItem">

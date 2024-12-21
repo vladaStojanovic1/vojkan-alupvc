@@ -2,9 +2,19 @@
   background-color: $primary;
   padding: 60px 0 10px 0;
   color: $white;
+  position: relative;
 
   @include media-up(l) {
-    padding: 100px 0 10px 0;
+    padding: 180px 0 10px 0;
+  }
+
+  &__svg {
+    svg {
+      top: 0;
+      position: absolute;
+      right: 0;
+      fill: $gray-3;
+    }
   }
 
   &__logo {
@@ -40,8 +50,12 @@
       font-weight: 700;
       margin-bottom: 0;
 
-      @include media-down(l) {
+      @include media-up(s) {
         max-width: 250px;
+      }
+
+      @include media-up(l) {
+        max-width: initial;
       }
 
       span {
@@ -112,4 +126,12 @@
   .p-10 {
     padding: 0 10px;
   }
+}
+
+.page-template-template-nasi-projekti .m-footer .m-footer__svg svg {
+  fill: $white;
+}
+
+.page-template-template-404 .m-reasons {
+  background: $gray-3 !important;
 }
