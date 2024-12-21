@@ -44,7 +44,7 @@ function headerHomePage() {
                 <div class="_l6 mt-auto">
                    <div class="m-header__content">
                        <h1 id="typing-title" class="m-header__content--title" data-title="<?php echo esc_attr($header_title); ?>"></h1>
-                       <p id="typing-subtext" class="m-header__content--text"><?php echo esc_attr($header_text); ?></p>
+                       <p id="typing-subtext" class="m-header__content--text"><?php echo $header_text; ?></p>
 
                        <a class="a-button -primary mt-20 opacityAnim" style="opacity: 0;"  href="<?php echo $header_contact['url'] ?>">
                            <?php echo $header_contact['title'] ?>
