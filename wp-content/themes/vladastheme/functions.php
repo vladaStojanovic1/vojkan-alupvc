@@ -174,12 +174,22 @@ add_image_size('custom-size', 800, 600, true);
 
 
 // Projects = 404 stranica
+//add_action('template_redirect', function () {
+//    if (is_singular('projects')) {
+//        wp_redirect(home_url('/404-page/'));
+//        exit;
+//    }
+//});
+
 add_action('template_redirect', function () {
-    if (is_singular('projects')) {
-        wp_redirect(home_url('/404-page/'));
+    if (is_singular('projects')) { // Proverava da li je to CPT "projects"
+        global $wp_query;
+        $wp_query->set_404(); // Postavlja 404 status
+        status_header(404);
+        nocache_headers();
+        require get_template_directory() . '/404.php'; // Učita vašu 404 stranicu
         exit;
     }
 });
-
 
 
