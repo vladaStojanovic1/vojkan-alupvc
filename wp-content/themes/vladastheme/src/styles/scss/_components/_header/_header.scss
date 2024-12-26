@@ -15,6 +15,10 @@
     z-index: 0;
   }
 
+  @media (min-width: 576px) and (max-width: 992px) and (orientation: landscape) {
+    height: 100vh;
+  }
+
   &__blueTitle {
     background: $primary;
     color: $white;
@@ -28,16 +32,17 @@
     width: 2000px;
     z-index: 1;
 
-
-
     @include media-up(s) {
       right: 25%;
       font-size: 30px;
+
     }
+
     @media (min-width: 576px) and (max-width: 992px) and (orientation: landscape) {
       font-size: 25px;
       padding: 5px;
     }
+
     @include media-up(l) {
       top: 110px;
     }
