@@ -42,7 +42,7 @@ function headerHomePage() {
         <div class="_wrapper height-100">
             <div class="_row justify-end height-100">
                 <div class="_l4">
-                    <h1 class="m-header__blueTitle">PVC stolarija <strong>Vlasotince</strong></h1>
+                    <h1 class="m-header__blueTitle anim-left">ALU PVC stolarija <strong>Vlasotince</strong></h1>
                 </div>
                 <div class="_l6 mt-auto">
                    <div class="m-header__content">

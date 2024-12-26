@@ -310,6 +310,17 @@ document.addEventListener("DOMContentLoaded", function () {
                 { opacity: 0 },
                 { opacity: 1, duration: 1, ease: "power1.inOut" },
                 "+=0.5"
+            )
+            .fromTo(
+                ".anim-left",
+                {x:-1000},
+                {
+                    opacity:1,
+                    duration: 2,
+                    x: 0,
+                    ease: "power2.out",
+                },
+                "+=0.5"
             );
     }
 
@@ -347,6 +358,12 @@ document.addEventListener("DOMContentLoaded", function () {
             { opacity: 1, y: 0, duration: 1, delay: 0.7, ease: "bounce.out" }
         );
     }
+
+    gsap.to('.anim-left', {
+        duration: 2, // Trajanje animacije (u sekundama)
+        x: 300, // Pomeranje elementa na desno
+        ease: "power2.out", // Efekat animacije
+    });
 
 
     // Google Maps

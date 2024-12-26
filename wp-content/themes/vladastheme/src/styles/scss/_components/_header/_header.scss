@@ -26,16 +26,18 @@
     padding: 10px;
     font-weight: 300;
     position: absolute;
-    right: 20%;
+    right: 0;
     top: 80px;
-    text-align: end;
-    width: 2000px;
+    text-align: center;
+    width: 100%;
     z-index: 1;
+    opacity: 0;
 
     @include media-up(s) {
       right: 25%;
       font-size: 30px;
-
+      width: 2000px;
+      text-align: end;
     }
 
     @media (min-width: 576px) and (max-width: 992px) and (orientation: landscape) {
@@ -45,6 +47,10 @@
 
     @include media-up(l) {
       top: 110px;
+    }
+
+    strong {
+      font-weight: 700;
     }
   }
 
