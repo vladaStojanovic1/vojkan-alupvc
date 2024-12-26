@@ -38,11 +38,15 @@ function headerHomePage() {
     $header_contact = get_field('header_contact');
     ?>
 
-    <header class="m-header" style="background-image: url(<?php echo $header_image;?>)">
+    <header class="m-header" aria-label="Pvc stolarija Vlasotince i Pirot | Vojkan ALU & PVC | Vojkan ALU & PVC nudi prozore, vrata, garažna vrata, roletne, komarnike i ALU kapije-ograde po meri. Posetite nas u Vlasotincu i Pirotu." style="background-image: url(<?php echo $header_image;?>)">
         <div class="_wrapper height-100">
             <div class="_row justify-end height-100">
+                <div class="_l4">
+                    <h1 class="m-header__blueTitle">PVC stolarija <strong>Vlasotince</strong></h1>
+                </div>
                 <div class="_l6 mt-auto">
                    <div class="m-header__content">
+
                        <h1 id="typing-title" class="m-header__content--title" data-title="<?php echo esc_attr($header_title); ?>"></h1>
                        <p id="typing-subtext" class="m-header__content--text"><?php echo $header_text; ?></p>
 

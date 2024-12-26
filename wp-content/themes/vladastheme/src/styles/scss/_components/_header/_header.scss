@@ -15,6 +15,27 @@
     z-index: 0;
   }
 
+  &__blueTitle {
+    background: $primary;
+    color: $white;
+    font-size: 30px;
+    padding: 10px;
+    font-weight: 300;
+    position: absolute;
+    right: 20%;
+    top: 80px;
+    text-align: end;
+    width: 2000px;
+    z-index: 1;
+
+    @include media-up(s) {
+      right: 25%;
+    }
+
+    @include media-up(l) {
+      top: 110px;
+    }
+  }
 
   &.-about {
     height: 50vh;
@@ -72,6 +93,7 @@
 
     &--text {
       font-size: 22px;
+      opacity: 0;
       font-weight: 500;
     }
 

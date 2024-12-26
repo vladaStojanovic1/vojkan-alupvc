@@ -5,11 +5,12 @@
   z-index: 12;
 
   &__address {
-    //flex-direction: column;
+
+    p {
+      color: $white;
+    }
 
     @include media-up(s) {
-      //flex-direction: row;
-
       div {
         margin-right: 20px;
       }
@@ -33,12 +34,6 @@
     }
 
     &--item {
-      //margin-bottom: 5px;
-      //
-      //@include media-up(s) {
-      //  margin-bottom: 0;
-      //}
-
      @include media-down(s) {
        &:first-of-type {
          margin-right: 15px;
