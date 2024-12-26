@@ -18,7 +18,7 @@
   &__blueTitle {
     background: $primary;
     color: $white;
-    font-size: 30px;
+    font-size: 25px;
     padding: 10px;
     font-weight: 300;
     position: absolute;
@@ -28,10 +28,16 @@
     width: 2000px;
     z-index: 1;
 
+
+
     @include media-up(s) {
       right: 25%;
+      font-size: 30px;
     }
-
+    @media (min-width: 576px) and (max-width: 992px) and (orientation: landscape) {
+      font-size: 25px;
+      padding: 5px;
+    }
     @include media-up(l) {
       top: 110px;
     }
